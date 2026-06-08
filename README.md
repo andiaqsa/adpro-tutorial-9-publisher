@@ -8,3 +8,11 @@ Hal ini berarti Publisher dan Subscriber terhubung ke Message Broker (RabbitMQ) 
 Berikut adalah *screenshot* dari RabbitMQ yang sudah berhasil berjalan di komputer saya menggunakan Docker:
 
 ![img.png](img.png)
+
+**d. Sending and Processing Event**
+Berikut adalah *screenshot* dari terminal saat program dijalankan:
+
+![img_1.png](img_1.png)
+
+**Penjelasan:**
+Gambar di atas menunjukkan komunikasi sukses antara *publisher* dan *subscriber* melalui RabbitMQ. Saat saya menjalankan perintah `cargo run` di direktori `publisher`, program tersebut mengirimkan 5 buah event secara beruntun ke RabbitMQ. Karena program `subscriber` sudah saya jalankan sebelumnya dan sedang "mendengarkan" antrean pesan, ia langsung menerima kelima event tersebut secara *real-time* dan mencetaknya di layar konsol, lengkap dengan identitas saya (Andi - 2306275046).
