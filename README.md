@@ -3,3 +3,8 @@ Program publisher akan mengirimkan total 5 buah pesan (UserCreatedEventMessage) 
 
 b. The url of: “amqp://guest:guest@localhost:5672” is the same as in the subscriber program, what does it mean?
 Hal ini berarti Publisher dan Subscriber terhubung ke Message Broker (RabbitMQ) yang sama. Agar komunikasi event-driven berhasil, pengirim dan penerima harus menggunakan broker yang sama sebagai perantara pengiriman pesan.
+
+**c. RabbitMQ Management Interface**
+Berikut adalah *screenshot* dari RabbitMQ yang sudah berhasil berjalan di komputer saya menggunakan Docker:
+
+![img.png](img.png)
